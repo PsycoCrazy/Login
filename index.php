@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a id="login" href="Login/log.php"> Login </a>
+    <a id="login" href="Login/login.php"> Login </a>
     <a id="creat" href="Creat/Creat.php">Creat Account</a>
 </body>
 </html>

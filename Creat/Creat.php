@@ -6,14 +6,15 @@
         print_r($_POST['email']);
         print_r($_POST['telefone']);
     } */
-    include_once('config.php');
+    include_once('../config.php');
 
     $Nome = $_POST['Nome'];
     $Email = $_POST['Email'];
-    $Senha = $_POST['Senha'];
+    $Data_Nasc = $_POST['Data_Nasc'];
     $Sexo = $_POST['Sexo'];
+    $Senha = $_POST['Senha'];
 
-    $result = mysqli_query($conexao, "INSERT INTO formulario (Nome, Email, Senha, Sexo) VALUES('$Nome', '$Email', '$Senha', '$Sexo')");
+    $result = mysqli_query($conexao, "INSERT INTO cadastro (Nome, Email, Data_Nasc, Sexo, Senha) VALUES('$Nome', '$Email', '$Data_Nasc', '$Sexo', '$Senha')");
 
     }
 ?>
@@ -37,20 +38,22 @@
                 <label for="Email"><strong>Email:</strong></label>
                 <input type="text" name="Email" id="Email" required>
             </br>
-<!--                 <label for="Senha"><strong>Senha:</strong></label>
-                <input type="password" name="Senha" id="Senha" required>
-            </br> -->
                 <label for="Data_Nasc"><strong>Data de Nascimento:</strong></label>
                 <input type="text" name="Data_Nasc" id="Data_Nasc" required>
-                </br>
-            <label for="sexo"><strong>Sexo:</strong></label>
+            </br>
+                <label for="Sexo"><strong>Sexo:</strong></label>
+                <input type="text" name="Sexo" id="Sexo">
+            </br>
+                <label for="Senha"><strong>Senha:</strong></label>
+                <input type="password" name="Senha" id="Senha" required>
+<!--             <label for="sexo"><strong>Sexo:</strong></label>
             <label>
                 <input type="radio" name="Sexo" value="Sexo" checked>Feminino
             </label>
             <label>
-                <input type="radio" name="Sexo" value="Sexo">Masculino
+                <input type="radio" name="Sexo" value="Sexo">Masculino -->
             </label>
-                <button class="botao" type="submit" id="submit">Enviar</button>
+                <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
             </fieldset>
 
         </form>

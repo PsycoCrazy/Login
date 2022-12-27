@@ -11,9 +11,12 @@
         <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
     </div>
     <div>
-        <form>
-            <input type = "text" class="inputs" placeholder = "Email ou Telefone">
+        <form >
+            <input type = "text" class="inputs" placeholder = "Email ou Usuário">
+</br>
             <input type = "password" class="inputs"  placeholder ="Senha">
+</br>
+            <input class="botao" type="submit" name="submit" value="Enviar">
         </form>
     </div>
 </body>
