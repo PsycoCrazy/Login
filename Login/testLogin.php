@@ -16,7 +16,16 @@
 
         $result = $conexao->query($sql);
 
-        print_r($result);
+/*         print_r($result); */
+        if(mysqli_num_rows($result)< 1)
+        {
+            header('Location: Login.php');
+        }
+        else
+        {
+            header('Location: ../TelaInicial.php');
+        }
+
     }
 
     else{
