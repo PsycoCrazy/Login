@@ -6,17 +6,19 @@
         print_r($_POST['email']);
         print_r($_POST['telefone']);
     } */
-    include_once('config.php');
+    include_once('../config.php');
 
     $Nome = $_POST['Nome'];
     $Email = $_POST['Email'];
-    $Senha = $_POST['Senha'];
+    $Data_Nasc = $_POST['Data_Nasc'];
     $Sexo = $_POST['Sexo'];
+    $Senha = $_POST['Senha'];
 
-    $result = mysqli_query($conexao, "INSERT INTO formulario (Nome, Email, Senha, Sexo) VALUES('$Nome', '$Email', '$Senha', '$Sexo')");
+    $result = mysqli_query($conexao, "INSERT INTO cadastro (Nome, Email, Data_Nasc, Sexo, Senha) VALUES('$Nome', '$Email', '$Data_Nasc', '$Sexo', '$Senha')");
 
     }
 ?>
+
 <!doctype html>
 <html>
 
@@ -28,6 +30,9 @@
 </head>
 
 <body>
+    <div class="botao-voltar">
+        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
+    </div>
     <div>
         <form action="Creat.php" method="POST">
             <fieldset class="grupo">
@@ -44,16 +49,17 @@
                 <input type="text" name="Data_Nasc" id="Data_Nasc" required>
                 </br>
             <label for="sexo"><strong>Sexo:</strong></label>
-            <label>
+                <input type="text" name="Sexo" id="Sexo" required>
+<!--             <label>
                 <input type="radio" name="Sexo" value="Sexo" checked>Feminino
             </label>
             <label>
                 <input type="radio" name="Sexo" value="Sexo">Masculino
-            </label>
+            </label> -->
             </br>
             <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" required>
-                <button class="botao" type="submit" id="submit">Enviar</button>
+                <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
             </fieldset>
 
         </form>
