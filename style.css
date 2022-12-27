@@ -1,0 +1,12 @@
+body{
+    align-items: center;
+    align-content: center;
+    margin-left: 850px;
+    margin-top: 400px;
+    background-color: darkolivegreen;
+}
+
+#login{
+    margin-right: 1rem;
+    text-align: center; 
+}   
