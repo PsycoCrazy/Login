@@ -50,6 +50,9 @@
             <label>
                 <input type="radio" name="Sexo" value="Sexo">Masculino
             </label>
+            </br>
+            <label for="Senha"><strong>Senha:</strong></label>
+                <input type="password" name="Senha" id="Senha" required>
                 <button class="botao" type="submit" id="submit">Enviar</button>
             </fieldset>
 
