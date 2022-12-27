@@ -18,6 +18,7 @@
 
     }
 ?>
+
 <!doctype html>
 <html>
 
@@ -29,6 +30,9 @@
 </head>
 
 <body>
+    <div class="botao-voltar">
+        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
+    </div>
     <div>
         <form action="Creat.php" method="POST">
             <fieldset class="grupo">
@@ -40,6 +44,7 @@
             </br>
                 <label for="Data_Nasc"><strong>Data de Nascimento:</strong></label>
                 <input type="text" name="Data_Nasc" id="Data_Nasc" required>
+<<<<<<< HEAD
             </br>
                 <label for="Sexo"><strong>Sexo:</strong></label>
                 <input type="text" name="Sexo" id="Sexo">
@@ -60,6 +65,21 @@
             <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" required>
                 <button class="botao" type="submit" id="submit">Enviar</button>
+>>>>>>> develop
+=======
+                </br>
+            <label for="sexo"><strong>Sexo:</strong></label>
+                <input type="text" name="Sexo" id="Sexo" required>
+<!--             <label>
+                <input type="radio" name="Sexo" value="Sexo" checked>Feminino
+            </label>
+            <label>
+                <input type="radio" name="Sexo" value="Sexo">Masculino
+            </label> -->
+            </br>
+            <label for="Senha"><strong>Senha:</strong></label>
+                <input type="password" name="Senha" id="Senha" required>
+                <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
 >>>>>>> develop
             </fieldset>
 
