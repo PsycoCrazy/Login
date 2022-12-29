@@ -12,12 +12,25 @@
     </div>
 <?php
     session_start();
-    $Email = $_SESSION['Email'];
-    $Senha = $_SESSION['Senha'];
-    $Nome = $_SESSION["Nome"];
-    echo "<h4>Email:<u>$Email</u></h4>";
-    echo "<h4>Senha:<u>$Senha</u></h4>";
-    echo "<h4>Nome:<u>$Nome</u></h4>";
+    if(isset($_POST['submit']))
+    {
+/*     {
+        print_r($_POST['nome']);
+        print_r($_POST['email']);
+        print_r($_POST['telefone']);
+    } */
+    include_once('../config.php');
+
+    $Nome = $_POST['Nome'];
+    $Email = $_POST['Email'];
+    $Data_Nasc = $_POST['Data_Nasc'];
+    $Sexo = $_POST['Sexo'];
+    $Senha = $_POST['Senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO cadastro (Nome, Email, Data_Nasc, Sexo, Senha) VALUES('$Nome', '$Email', '$Data_Nasc', '$Sexo', '$Senha')");
+
+    header('Location: ../Login\Login.php');
+    }
 ?>
 
 </body>
