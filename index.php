@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <div class="box">
+            <span>Veneno Store</span>
             <a id="login" href="Login/login.php"> Login </a>
             <a id="creat" href="Creat/Creat.php">Creat Account</a>
         </div>
