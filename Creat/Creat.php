@@ -16,6 +16,7 @@
 
     $result = mysqli_query($conexao, "INSERT INTO cadastro (Nome, Email, Data_Nasc, Sexo, Senha) VALUES('$Nome', '$Email', '$Data_Nasc', '$Sexo', '$Senha')");
 
+    header('Location: ../Login\Login.php');
     }
 ?>
 
