@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    include_once('../config.php');
+
+    $sql = "SELECT * FROM cadastro ORDER BY id DESC";
+
+    $result = $conexao->query($sql);
+
+/*     print_r($result); */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,31 +18,40 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>BEM VINDO</h1>
+    <div class="m-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Data_Nasc</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Senha</th>
+                    <th scope="col">...</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <?php
+                        while($user_data = mysqli_fetch_assoc($result))
+                        {
+                            echo "<tr>";
+                            echo "<td>".$user_data['ID']."</td>";
+                            echo "<td>".$user_data['Nome']."</td>";
+                            echo "<td>".$user_data['Email']."</td>";
+                            echo "<td>".$user_data['Data_Nasc']."</td>";
+                            echo "<td>".$user_data['Sexo']."</td>";
+                            echo "<td>".$user_data['Senha']."</td>";
+                            echo "<td>
+                                <a class='btn btn-editar' href='Editar.php?id=$user_data[ID]';>Editar</a>
+                                </td>";
+                            echo "</tr>";
+                        }
+                    ?>
+                </tbody>
+        </table>
     </div>
-<?php
-    session_start();
-    if(isset($_POST['submit']))
-    {
-/*     {
-        print_r($_POST['nome']);
-        print_r($_POST['email']);
-        print_r($_POST['telefone']);
-    } */
-    include_once('../config.php');
 
-    $Nome = $_POST['Nome'];
-    $Email = $_POST['Email'];
-    $Data_Nasc = $_POST['Data_Nasc'];
-    $Sexo = $_POST['Sexo'];
-    $Senha = $_POST['Senha'];
-
-    $result = mysqli_query($conexao, "INSERT INTO cadastro (Nome, Email, Data_Nasc, Sexo, Senha) VALUES('$Nome', '$Email', '$Data_Nasc', '$Sexo', '$Senha')");
-
-    header('Location: ../Login\Login.php');
-    }
-?>
 
 </body>
 </html>
