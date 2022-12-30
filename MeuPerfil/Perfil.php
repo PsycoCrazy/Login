@@ -15,10 +15,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu perfil</title>
 </head>
 <body>
-    <div class="m-5">
+    <div>
         <table class="table">
             <thead>
                 <tr>
@@ -43,8 +43,11 @@
                             echo "<td>".$user_data['Sexo']."</td>";
                             echo "<td>".$user_data['Senha']."</td>";
                             echo "<td>
-                                <a class='btn btn-editar' href='Editar.php?id=$user_data[ID]';>Editar</a>
+                                <a class='btn btn-editar' href='Editar.php?ID=$user_data[ID]';>Editar</a>
                                 </td>";
+                            echo "<td>
+                                <a class='btn btn-delete' href='Delete.php?ID=$user_data[ID]';>Deletar</a>    
+                            </td>";
                             echo "</tr>";
                         }
                     ?>
