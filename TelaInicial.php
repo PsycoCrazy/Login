@@ -8,6 +8,15 @@
         header('Location: Login\Login.php');
     }
     $logado = $_SESSION['Email'];
+
+/*     if(!empty($_GET['search']))
+    {
+        echo "contem algo, pesquisar";
+    }
+    else
+    {
+        $sql = "SELECT I "
+    } */
 ?>
 
 
@@ -21,13 +30,31 @@
 </head>
 <body>
     <div>
-    <h1>BEM VINDO, ESPERO QUE SE DIVIRTA</h1>
-</div>
+        <h1>BEM VINDO, ESPERO QUE SE DIVIRTA</h1>
+    </div>
+    <div class="box-search">
+        <input type="search" class="form-control w-25" placeholder="Pesquisar" id="Pesquisar">
+        <button onclick="searchData()" class="btn btn-primary">search</button>
+    </div>
     <div>
         <a href="sair.php" class="btn btn-sair">Sair</a>
     </div>
     <div>
-    <a href="MeuPerfil/Perfil.php" class="btn btn-Perfil">Meu Perfil</a>
+        <a href="MeuPerfil/Perfil.php" class="btn btn-Perfil">Meu Perfil</a>
     </div>
+    <script>
+        var search = document.getElementById('Pesquisar');
+
+        search.addEventListener("keydown", function(event){
+            if (event.key === "Enter")
+            {
+                searchData();
+            }
+        });
+        function searchData()
+        {
+            window.location = 'TelaInicial.php?search=' +search.value;
+        }
+    </script>
 </body>
 </html>

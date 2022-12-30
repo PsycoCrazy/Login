@@ -12,7 +12,7 @@
     </div>
     <div>
         <form action="testLogin.php" method="POST">
-            <input type = "text" class="inputs" name="Email" placeholder = "Email ou Usuário">
+            <input type = "text" class="inputs" name="Email" placeholder = "Email">
 </br>
             <input type = "password" class="inputs"  name="Senha" placeholder ="Senha">
 </br>

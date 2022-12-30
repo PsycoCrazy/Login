@@ -1,8 +1,9 @@
 <?php
     session_start();
     include_once('../config.php');
+    
+    $sql ="SELECT * FROM cadastro";
 
-    $sql = "SELECT * FROM cadastro ORDER BY id DESC";
 
     $result = $conexao->query($sql);
 
@@ -43,9 +44,12 @@
                             echo "<td>".$user_data['Sexo']."</td>";
                             echo "<td>".$user_data['Senha']."</td>";
                             echo "<td>
-                                <a class='btn btn-editar' href='Editar.php?id=$user_data[ID]';>Editar</a>
+                                <a class='btn btn-editar' href='Editar.php?ID=$user_data[ID]';>Editar</a>
                                 </td>";
-                            echo "</tr>";
+                            echo "<td>
+                                <a class='btn btn-deletar' href='Editar.php?ID$user_data[ID]';>Deletar</a>
+                            </td>";
+                            echo "</tr>";   
                         }
                     ?>
                 </tbody>

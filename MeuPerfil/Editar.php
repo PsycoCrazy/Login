@@ -14,11 +14,11 @@
     {
         while($user_data = mysqli_fetch_assoc($result))
             {
-                $Nome = $_POST['Nome'];
-                $Email = $_POST['Email'];
-                $Data_Nasc = $_POST['Data_Nasc'];
-                $Sexo = $_POST['Sexo'];
-                $Senha = $_POST['Senha'];
+                $Nome = $user_data['Nome'];
+                $Email = $user_data['Email'];
+                $Data_Nasc = $user_data['Data_Nasc'];
+                $Sexo = $user_data['Sexo'];
+                $Senha = $user_data['Senha'];
             }    
     }
 
@@ -28,7 +28,13 @@
     }
 
 }
+else
+{
+    header('location: Perfil.php');
+}
 ?>
+
+
 
 <!doctype html>
 <html>
@@ -45,7 +51,7 @@
         <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
     </div>
     <div>
-        <form>
+        <form action=""SaveEdit.php method="POST"> 
             <fieldset class="grupo">
                     <label for="Nome"><strong>Nome:</strong></label>
                     <input type="text" name="Nome" id="nome" value="<?php echo $Nome ?>" required>
@@ -70,7 +76,8 @@
             </br>
             <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" value="<?php echo $Senha ?>" required>
-                <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
+                <input type="hidden" name="ID" value="<?php echo $ID ?>">
+                <button class="botao" type="submit" name="update" id="update">Enviar</button>
             </fieldset>
 
         </form>
