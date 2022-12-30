@@ -43,11 +43,31 @@
                 <label for="Email"><strong>Email:</strong></label>
                 <input type="text" name="Email" id="Email" required>
             </br>
-<!--                 <label for="Senha"><strong>Senha:</strong></label>
-                <input type="password" name="Senha" id="Senha" required>
-            </br> -->
                 <label for="Data_Nasc"><strong>Data de Nascimento:</strong></label>
                 <input type="text" name="Data_Nasc" id="Data_Nasc" required>
+<<<<<<< HEAD
+            </br>
+                <label for="Sexo"><strong>Sexo:</strong></label>
+                <input type="text" name="Sexo" id="Sexo">
+            </br>
+                <label for="Senha"><strong>Senha:</strong></label>
+                <input type="password" name="Senha" id="Senha" required>
+<!--             <label for="sexo"><strong>Sexo:</strong></label>
+            <label>
+                <input type="radio" name="Sexo" value="Sexo" checked>Feminino
+            </label>
+            <label>
+                <input type="radio" name="Sexo" value="Sexo">Masculino -->
+            </label>
+<<<<<<< HEAD
+                <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
+=======
+            </br>
+            <label for="Senha"><strong>Senha:</strong></label>
+                <input type="password" name="Senha" id="Senha" required>
+                <button class="botao" type="submit" id="submit">Enviar</button>
+>>>>>>> develop
+=======
                 </br>
             <label for="sexo"><strong>Sexo:</strong></label>
                 <input type="text" name="Sexo" id="Sexo" required>
@@ -61,6 +81,7 @@
             <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" required>
                 <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
+>>>>>>> develop
             </fieldset>
 
         </form>
