@@ -81,7 +81,7 @@
             <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" required>
                 <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
->>>>>>> develop
+>>>>>>>
             </fieldset>
 
         </form>
