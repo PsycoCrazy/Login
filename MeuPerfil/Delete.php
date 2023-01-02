@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
      if(!empty($_GET['ID']))
      {
     include_once('../config.php');

@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     if(!empty($_GET['ID']))
     {
 
@@ -43,7 +45,7 @@ else
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <title>Cadastro</title>
+    <title>Editar</title>
 </head>
 
 <body>

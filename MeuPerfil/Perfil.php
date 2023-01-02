@@ -7,7 +7,10 @@
 
     $result = $conexao->query($sql);
 
+    $ID = filter_input(INPUT_GET, 'ID', FILTER_SANITIZE_NUMBER_INT);
+    var_dump($ID);
 /*     print_r($result); */
+
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +22,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+    <input type="hidden" name="ID" value="<?php echo $ID ?>">
+    </div>
     <div class="m-5">
         <table class="table">
             <thead>
