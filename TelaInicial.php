@@ -1,5 +1,6 @@
 <?php
     session_start();
+
 /*     print_r($_SESSION); */
     if((!isset ($_SESSION['Email']) == true) and (!isset($_SESSION ['Senha']) == true))
     {
@@ -32,9 +33,10 @@
     <title>Mundo Virtual</title>
 </head>
 <body>
-    <div>
-        <h1>BEM VINDO, ESPERO QUE SE DIVIRTA</h1>
-    </div>
+
+    <?php
+        echo "<h1>BEM VINDO <u>$logado</u>, ESPERO QUE SE DIVIRTA</h1>";
+    ?>
     <div class="box-search">
         <input type="search" class="form-control w-25" placeholder="Pesquisar" id="Pesquisar">
         <button onclick="searchData()" class="btn btn-primary">search</button>
@@ -59,5 +61,8 @@
             window.location = 'TelaInicial.php?search=' +search.value;
         }
     </script>
+    <div>
+        <a href="Aplicativos/calculadora/indexCalculadora.php">Calculadora</a>
+    </div>
 </body>
 </html>
