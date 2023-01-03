@@ -1,7 +1,14 @@
 <?php
+<<<<<<< HEAD
 if(!empty($_GET['ID']))
     {
 
+=======
+    session_start();
+
+     if(!empty($_GET['ID']))
+     {
+>>>>>>> develop
     include_once('../config.php');
 
     $ID = $_GET['ID'];
@@ -10,6 +17,7 @@ if(!empty($_GET['ID']))
 
     $result = $conexao->query($sqlSelect);
 
+<<<<<<< HEAD
     if($result->num_rows > 0)
     {
         $sqlSelect = "DELETE FROM cadastro WHERE ID=$ID";
@@ -17,4 +25,13 @@ if(!empty($_GET['ID']))
     }
 }
     header('Location: Perfil.php');
+=======
+    if($result ->num_rows > 0)
+        {
+            $sqlDelete = "DELETE FROM cadastro WHERE ID=$ID";
+            $resultDelete = $conexao->query($sqlDelete);
+        }
+    }
+    header('Location: Perfil.php'); 
+>>>>>>> develop
 ?>

@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     if(!empty($_GET['ID']))
     {
 
@@ -14,7 +16,11 @@
     {
         while($user_data = mysqli_fetch_assoc($result))
             {
+<<<<<<< HEAD
                 $Nome =  $user_data['Nome'];
+=======
+                $Nome = $user_data['Nome'];
+>>>>>>> develop
                 $Email = $user_data['Email'];
                 $Data_Nasc = $user_data['Data_Nasc'];
                 $Sexo = $user_data['Sexo'];
@@ -28,11 +34,20 @@
     }
 
 }
+<<<<<<< HEAD
     else 
     {
         header('Location: Perfil.php');
     }
+=======
+else
+{
+    header('location: Perfil.php');
+}
+>>>>>>> develop
 ?>
+
+
 
 <!doctype html>
 <html>
@@ -41,7 +56,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+<<<<<<< HEAD
     <title>Editar Perfil</title>
+=======
+    <title>Editar</title>
+>>>>>>> develop
 </head>
 
 <body>
@@ -49,7 +68,11 @@
         <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
     </div>
     <div>
+<<<<<<< HEAD
         <form action="SaveEdit.php" method="POST">
+=======
+        <form action=""SaveEdit.php method="POST"> 
+>>>>>>> develop
             <fieldset class="grupo">
                     <label for="Nome"><strong>Nome:</strong></label>
                     <input type="text" name="Nome" id="nome" value="<?php echo $Nome ?>" required>

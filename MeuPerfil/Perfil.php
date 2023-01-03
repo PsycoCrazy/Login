@@ -1,12 +1,16 @@
 <?php
     session_start();
     include_once('../config.php');
+    
+    $sql ="SELECT * FROM cadastro";
 
-    $sql = "SELECT * FROM cadastro ORDER BY id DESC";
 
     $result = $conexao->query($sql);
 
+    $ID = filter_input(INPUT_GET, 'ID', FILTER_SANITIZE_NUMBER_INT);
+    var_dump($ID);
 /*     print_r($result); */
+
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +23,12 @@
 </head>
 <body>
     <div>
+<<<<<<< HEAD
+=======
+    <input type="hidden" name="ID" value="<?php echo $ID ?>">
+    </div>
+    <div class="m-5">
+>>>>>>> develop
         <table class="table">
             <thead>
                 <tr>
@@ -46,9 +56,15 @@
                                 <a class='btn btn-editar' href='Editar.php?ID=$user_data[ID]';>Editar</a>
                                 </td>";
                             echo "<td>
+<<<<<<< HEAD
                                 <a class='btn btn-delete' href='Delete.php?ID=$user_data[ID]';>Deletar</a>    
                             </td>";
                             echo "</tr>";
+=======
+                                <a class='btn btn-deletar' href='Editar.php?ID$user_data[ID]';>Deletar</a>
+                            </td>";
+                            echo "</tr>";   
+>>>>>>> develop
                         }
                     ?>
                 </tbody>

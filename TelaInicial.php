@@ -1,5 +1,6 @@
 <?php
     session_start();
+
 /*     print_r($_SESSION); */
     if((!isset ($_SESSION['Email']) == true) and (!isset($_SESSION ['Senha']) == true))
     {
@@ -8,6 +9,18 @@
         header('Location: Login\Login.php');
     }
     $logado = $_SESSION['Email'];
+
+/*     if(!empty($_GET['search']))
+    {
+        echo "contem algo, pesquisar";
+    }
+    else
+    {
+        $sql = "SELECT I "
+    } */
+
+    $ID = filter_input(INPUT_GET, 'ID', FILTER_SANITIZE_NUMBER_INT);
+    var_dump($ID);
 ?>
 
 
@@ -20,14 +33,36 @@
     <title>Mundo Virtual</title>
 </head>
 <body>
-    <div>
-    <h1>BEM VINDO, ESPERO QUE SE DIVIRTA</h1>
-</div>
+
+    <?php
+        echo "<h1>BEM VINDO <u>$logado</u>, ESPERO QUE SE DIVIRTA</h1>";
+    ?>
+    <div class="box-search">
+        <input type="search" class="form-control w-25" placeholder="Pesquisar" id="Pesquisar">
+        <button onclick="searchData()" class="btn btn-primary">search</button>
+    </div>
     <div>
         <a href="sair.php" class="btn btn-sair">Sair</a>
     </div>
     <div>
-    <a href="MeuPerfil/Perfil.php" class="btn btn-Perfil">Meu Perfil</a>
+        <a href="MeuPerfil/Perfil.php?ID=$ID" class="btn btn-Perfil">Meu Perfil</a>
+    </div>
+    <script>
+        var search = document.getElementById('Pesquisar');
+
+        search.addEventListener("keydown", function(event){
+            if (event.key === "Enter")
+            {
+                searchData();
+            }
+        });
+        function searchData()
+        {
+            window.location = 'TelaInicial.php?search=' +search.value;
+        }
+    </script>
+    <div>
+        <a href="Aplicativos/calculadora/indexCalculadora.php">Calculadora</a>
     </div>
 </body>
 </html>
