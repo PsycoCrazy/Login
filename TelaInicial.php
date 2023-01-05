@@ -62,7 +62,8 @@
         }
     </script>
     <div>
-        <a href="Aplicativos/calculadora/indexCalculadora.php">Calculadora</a>
+        <a href="Funcionamento/aplicativos/indexCalculadora.php">Aplicativos</a>
+        <a href="Funcionamento/Jogos/Jogos.php">Jogos</a>
     </div>
 </body>
 </html>
