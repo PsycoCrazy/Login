@@ -18,9 +18,6 @@
     {
         $sql = "SELECT I "
     } */
-
-    $ID = filter_input(INPUT_GET, 'ID', FILTER_SANITIZE_NUMBER_INT);
-    var_dump($ID);
 ?>
 
 
@@ -45,7 +42,7 @@
         <a href="sair.php" class="btn btn-sair">Sair</a>
     </div>
     <div>
-        <a href="MeuPerfil/Perfil.php?ID=$ID" class="btn btn-Perfil">Meu Perfil</a>
+        <a href="MeuPerfil/Perfil.php" class="btn btn-Perfil">Meu Perfil</a>
     </div>
     <script>
         var search = document.getElementById('Pesquisar');
@@ -62,7 +59,7 @@
         }
     </script>
     <div>
-        <a href="Funcionamento/aplicativos/indexCalculadora.php">Aplicativos</a>
+        <a href="Funcionamento/aplicativos/Aplicativos.php">Aplicativos</a>
         <a href="Funcionamento/Jogos/Jogos.php">Jogos</a>
     </div>
 </body>
