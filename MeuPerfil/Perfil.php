@@ -7,10 +7,6 @@
 
     $result = $conexao->query($sql);
 
-    $ID = filter_input(INPUT_GET, 'ID', FILTER_SANITIZE_NUMBER_INT);
-    var_dump($ID);
-/*     print_r($result); */
-
 ?>
 
 <!DOCTYPE html>
