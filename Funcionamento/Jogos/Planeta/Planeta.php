@@ -11,7 +11,7 @@
 <body>
     <div id="Painel">
         Planeta
-        <div id="MediddorPlaneta">
+        <div id="MedidorPlaneta">
             <div id="BarraPlaneta"></div>
         </div>
     </div>
