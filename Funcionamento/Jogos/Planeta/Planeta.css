@@ -7,7 +7,7 @@ body{
 .NaveJogo{
     width: 40px;
     height: 40px;
-    background-image: url("ImagensPlanet/Nave2.png");
+    background-image: url("ImagensPlanet/nave.gif.gif");
     position: absolute;
 }
 
@@ -39,5 +39,12 @@ body{
     height: 6px;
     background-color: #000;
     border-radius: 6px;
+    position: absolute;
+}
+
+.bomba{
+    width: 24px;
+    height: 40px;
+    background-image: url("ImagensPlanet/nave.gif.gif");
     position: absolute;
 }
