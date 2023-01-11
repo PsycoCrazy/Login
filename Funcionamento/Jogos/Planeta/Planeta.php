@@ -20,6 +20,9 @@
         <div id="telaMsg" class="telaMsg">
             <button id="btnJogar" class="btnJogar">Play</button>
         </div>
+        <div id="telaMsg" class="telaMsg">
+            <button id="btnJogar" class="btnJogar">Jogar</button>
+        </div>
 
 </body>
 </html>
