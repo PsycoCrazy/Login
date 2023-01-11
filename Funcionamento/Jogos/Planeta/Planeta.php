@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,20 @@
     <title>Save the Planet</title>
 </head>
 <body>
-    <div id="Painel">
-        Planeta
-        <div id="MedidorPlaneta">
-            <div id="BarraPlaneta"></div>
+        <div id="painel">
+            Planeta
+            <div id="medidorPlaneta">
+                <div id="barraPlaneta"></div>
+            </div>
+            <div id="contBombas"></div>
         </div>
-    </div>
-    <div id="TelaMsg" class="TelaMsg">
-        <button id="btnJogar" class="btnJogar">Play</button>
-    </div>
-    <div id="NaveJogo" class="NaveJogo"></div>
+        <div id="naveJog" class="naveJog"></div>
+        <div id="telaMsg" class="telaMsg">
+            <button id="btnJogar" class="btnJogar">Play</button>
+        </div>
+        <div id="telaMsg" class="telaMsg">
+            <button id="btnJogar" class="btnJogar">Jogar</button>
+        </div>
+
 </body>
 </html>

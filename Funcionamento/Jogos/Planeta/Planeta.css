@@ -1,17 +1,42 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+}
+#medidorPlaneta{
+    border: 2px solid #000;
+    width:300px;
+    height: 20px;
     background-color: #fff;
 }
 
-.NaveJogo{
+#barraPlaneta{
+    width: 300px;
+    height: 20px;
+    background-color: #66f;
+}
+.naveJog{
     width: 40px;
     height: 40px;
     background-image: url("ImagensPlanet/nave.gif.gif");
     position: absolute;
 }
 
-.TelaMsg{
+.bomba{
+    width: 24px;
+    height: 40px;
+    background-image: url("ImagensPlanet/Missil.png");
+    position: absolute;
+}
+
+.tiroJog{
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 6px;
+    position:absolute;
+}
+
+.telaMsg{
     position: absolute;
     margin-left: -25%;
     top: 50px;
@@ -21,30 +46,24 @@ body{
     display: none;
 }
 
-#MedidorPlaneta{
-    border: 2px solid #000;
-    width:300px;
-    height: 20px;
-    background-color: #fff;
-}
-
-#BarraPlaneta{
-    width: 300px;
-    height: 20px;
-    background-color: #55f;
-}
-
-.tiroJogador{
-    width: 6px;
-    height: 6px;
-    background-color: #000;
-    border-radius: 6px;
+.explosaoChao{
+    width:55px;
+    height: 57px;
     position: absolute;
 }
 
-.bomba{
-    width: 24px;
-    height: 40px;
-    background-image: url("ImagensPlanet/nave.gif.gif");
+.explosaoAr{
+    width:70px;
+    height: 70px;
     position: absolute;
+}
+
+.telaMsg{
+    position: absolute;
+    margin-left: -25%;
+    top: 50px;
+    left: 50%;
+    width: 720px;
+    height: 621px;
+    display: none;
 }
