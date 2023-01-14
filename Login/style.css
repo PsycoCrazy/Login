@@ -70,6 +70,7 @@ input{
     top: 57%;
     left: 41%;
     border-radius: 10px;
+    text-decoration: none;
     cursor: pointer;
 }
 

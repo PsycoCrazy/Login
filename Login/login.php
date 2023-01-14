@@ -23,7 +23,7 @@
             <input type = "password" class="Senha"  name="Senha">
 </br>
             <input class="btn-enviar" type="submit" name="submit" value="Enviar">
-            <button class="btn-criar" type="submit" name="submit" id="submit">Criar Conta</button>
+            <a class="btn-criar" type="submit" name="submit" href="../Creat/Creat.php">Criar Conta</a>
         </form>
     </div>
 </body>
