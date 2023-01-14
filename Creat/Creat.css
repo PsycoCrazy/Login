@@ -1,12 +1,7 @@
+/* Todos os elementos da página */
 *{
     margin: 0;
-    padding: 0;
-}
-
-form{
-    align-items: center;
-    flex-direction: column;
-    display: flex;
+    padding: 0;   
 }
 
 .containers{
@@ -20,22 +15,23 @@ form{
 }
 
 .titulo{
-    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    left: 40%;
-    top: 25%;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;
-    padding-left: 150px;
-    padding-right: 140px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px, rgba(0, 0, 0, 0.3) 5px 5px 5px;
+    font-size: 60px;
+    margin-bottom: 50px;
 }
 
+.grupo{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
 
 .btn-home{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
     font-size: 1.2em;
     color: #ffffff;
@@ -51,52 +47,66 @@ form{
 }
 
 .btn-enviar {
-    position: absolute;
-    font-size: 1.2em;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 0;
-    color: #ffffff;
-    padding: 0.6em 2.5em;
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    top: 57%;
-    left: 800px;
-    cursor: pointer;
-    border-radius: 30px;
-}
-
-.btn-criar{
-    font-size: 1.2em;
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 0;
-    color: #ffffff;
-    padding: 0.6em 1.8em;
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 57%;
-    left: 51%;
-    border-radius: 30px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.Email{
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 0.6em 2.8em;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);  
+    border: 0;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    cursor: pointer;
+}
+
+.btn-limpar{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);  
+    border: 0;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    cursor: pointer;
+}
+#Nome{
+    margin-left: 130px;
     margin-bottom: 15px;
-}
-
-.Senha{
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 0.5em 2.8em;
-    margin-bottom: 70px;
-}
-
-label{
     font-size: 20px;
+    border-radius: 10px;
 }
+
+#Email{
+    margin-left: 132px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Data_Nasc{
+    margin-left: 22px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Sexo{
+    margin-left: 137px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Senha{
+    margin-left: 127px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+

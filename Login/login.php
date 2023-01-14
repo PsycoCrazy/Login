@@ -12,11 +12,12 @@
         <div class="botao-voltar">
             <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
          </div>
-            <p class="titulo">LOGIN IN VIRTUAL WORLD</p>
-        <div>
+            <p class="titulo">LOGIN</p>
+        <div class="formato">
             <form action="testLogin.php" method="POST">
                 <label for="Email" id="Email"><strong>Email:</strong></label>
                 <input type = "text" class="Email" name="Email">
+                <br/>
                 <label for="Senha" id="Senha"><strong>Senha:</strong></label>
                 <input type="password" class="Senha"  name="Senha">
                 <input class="btn-enviar" type="submit" name="submit" value="Enviar">

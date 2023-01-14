@@ -27,7 +27,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Creat.css">
     <title>Cadastro</title>
 </head>
 
@@ -36,7 +36,7 @@
         <div class="botao-voltar">
             <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
         </div>
-        <p class="titulo">CADASTRE-SE</p>
+        <p class="titulo"><strong>CADASTRE-SE</strong></p>
         <div>
             <form action="Creat.php" method="POST">
                 <fieldset class="grupo">
