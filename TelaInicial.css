@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(16, 20, 228, 0.675));
+    color: #59429d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.903);
+    color: #d5dadfea;
+    top: 0;
+    padding-left: 591px;
+    padding-right: 591px;
+    box-shadow: 2px 4px 6px #000;
+}
+
+.btn-Jogos{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 5em 2em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    left: 50%;
+    top: 40%;
+}
+
+.bnt-Aplicativos{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 5em 0.9em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    left: 40%;
+    top: 40%;
+}
+
+.btn-Perfil{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 0.6em 1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    left: 86%;
+    top: 107px;
+}
+
+.btn-sair{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 0.6em 2.2em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    left: 93%;
+    top: 107px;
+}
+
