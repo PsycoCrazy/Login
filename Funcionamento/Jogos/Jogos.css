@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(16, 20, 228, 0.675));
+}
+
+.bnt-planeta{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 5em 2em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    left: 10%;
+    top: 15%;
+}
+
+.btn-home{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 0.2em 0.6em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+
+}

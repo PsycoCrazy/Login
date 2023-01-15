@@ -1,0 +1,112 @@
+/* Todos os elementos da página */
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+.containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(16, 20, 228, 0.675));
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.grupo{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.btn-home{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);   
+    border: 0;
+    padding: 0.2em 0.6em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    left: 10px;
+    top: 1%;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);  
+    border: 0;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    cursor: pointer;
+}
+
+.btn-limpar{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);  
+    border: 0;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    cursor: pointer;
+}
+#Nome{
+    margin-left: 130px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Email{
+    margin-left: 132px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Data_Nasc{
+    margin-left: 22px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Sexo{
+    margin-left: 137px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#Senha{
+    margin-left: 127px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+

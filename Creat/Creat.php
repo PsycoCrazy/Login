@@ -22,42 +22,46 @@
 ?>
 
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" href="Creat.css">
     <title>Cadastro</title>
 </head>
 
 <body>
-    <div class="botao-voltar">
-        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
-    </div>
-    <div>
-        <form action="Creat.php" method="POST">
-            <fieldset class="grupo">
-                <label for="Nome"><strong>Nome:</strong></label>
-                <input type="text" name="Nome" id="Nome" required>
-            </br>
-                <label for="Email"><strong>Email:</strong></label>
-                <input type="text" name="Email" id="Email" required>
-            </br>
-                <label for="Data_Nasc"><strong>Data de Nascimento:</strong></label>
-                <input type="date" name="Data_Nasc" id="Data_Nasc" required>
-            </br>
-                <label for="Sexo"><strong>Sexo:</strong></label>
-                <input type="text" name="Sexo" id="Sexo">
-            </br>
-                <label for="Senha"><strong>Senha:</strong></label>
-                <input type="password" name="Senha" id="Senha" required>
-            </br>
-                <button class="botao" type="submit" name="submit" id="submit">Enviar</button>
-            </fieldset>
-
-        </form>
-
+    <div class="containers">
+        <div class="botao-voltar">
+            <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
+        </div>
+        <p class="titulo"><strong>CADASTRE-SE</strong></p>
+        <div>
+            <form action="Creat.php" method="POST">
+                <fieldset class="grupo">
+                    <label for="Nome" class="Nome"><strong>Nome:</strong></label>
+                    <input type="text" name="Nome" id="Nome" required>
+                    <br/>
+                    <label for="Email" class="Email"><strong>Email:</strong></label>
+                    <input type="text" name="Email" id="Email" required>
+                    <br/>
+                    <label for="Data_Nasc" class="Data_Nasc"><strong>Data de Nascimento:</strong></label>
+                    <input type="date" name="Data_Nasc" id="Data_Nasc" required>
+                    <br/>
+                    <label for="Sexo" class="Sexo"><strong>Sexo:</strong></label>
+                    <input type="text" name="Sexo" id="Sexo">
+                    <br/>
+                    <label for="Senha" class="Senha"><strong>Senha:</strong></label>
+                    <input type="password" name="Senha" id="Senha" required>
+                    <br/>
+                </fieldset>
+                <div class="btn-form">
+                    <button class="btn-enviar" type="submit" name="submit" id="submit">Enviar</button>
+                    <button class="btn-limpar" type="reset" name="reset" id="submit">Limpar</button>
+                </div>
+            </form>
+        </div>
     </body>
 
-    </html>
+</html>

@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 body{
+=======
+*{
+>>>>>>> develop
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+form{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+>>>>>>> develop
 .containers{
     display: flex;
     flex-direction: column;
@@ -13,6 +26,7 @@ body{
     background-image: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(16, 20, 228, 0.675));
 }
 
+<<<<<<< HEAD
 .title{
     display: flex;
     height: 10vh;
@@ -95,4 +109,86 @@ body{
 .login-body a{
     text-decoration: none;
     color: black;
+=======
+.titulo{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    left: 40%;
+    top: 25%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 140px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px, rgba(0, 0, 0, 0.3) 5px 5px 5px;
+}
+
+
+.btn-home{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);   
+    border: 0;
+    padding: 0.2em 0.6em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    left: 10px;
+    top: 1%;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    position: absolute;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 0;
+    color: #ffffff;
+    padding: 0.6em 2.5em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    top: 57%;
+    left: 800px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.btn-criar{
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 0;
+    color: #ffffff;
+    padding: 0.6em 1.8em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 57%;
+    left: 51%;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Email{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 0.6em 2.8em;
+    margin-bottom: 15px;
+}
+
+.Senha{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 0.5em 2.8em;
+    margin-bottom: 70px;
+}
+
+label{
+    font-size: 20px;
+>>>>>>> develop
 }

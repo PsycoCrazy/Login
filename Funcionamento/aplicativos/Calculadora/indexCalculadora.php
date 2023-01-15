@@ -12,11 +12,13 @@
     </head>
 
     <body>
+    <div>
+        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)'/>
+    </div>
         <div class="container">
             <div class="result">
                 <span>0</span>
             </div>
-
             <div class="buttons">
                 <button class="item item1 clear">AC</button>
                 <button class="item item1 negative" value="+/-">+/-</button>
