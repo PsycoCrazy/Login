@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +11,11 @@
     <title>MUNDO VIRTUAL - JOGOS</title>
 </head>
 <body>
-    <div class="containers">
-        <div>
+    <div>
         <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
-        </div>
+    </div>
+    <div class="containers">
+
         <div>
         <a class="bnt-planeta" id="Detalhe" href="Planeta/Planeta.php">Save The Planet</a>
         </div>
