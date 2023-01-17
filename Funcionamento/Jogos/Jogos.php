@@ -18,6 +18,7 @@
 
         <div>
         <a class="bnt-planeta" id="Detalhe" href="Planeta/Planeta.php">Save The Planet</a>
+        <a class="bnt-velha" id="Detalhe" href="JogoDaVelha/Velha.php">Jogo da Velha</a>
         </div>
     </div>
     <script type="text/javascript" src="Jogos.js"></script>

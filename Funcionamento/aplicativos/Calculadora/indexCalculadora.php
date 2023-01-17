@@ -16,7 +16,6 @@
             <div class="result">
                 <span>0</span>
             </div>
-
             <div class="buttons">
                 <button class="item item1 clear">AC</button>
                 <button class="item item1 negative" value="+/-">+/-</button>
