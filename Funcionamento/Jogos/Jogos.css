@@ -13,13 +13,29 @@
     background-image: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(16, 20, 228, 0.675));
 }
 
-.bnt-planeta{
+.btn-velha{
     position: absolute;
     font-size: 1.2em;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.903);
     border: 0;
-    padding: 5em 2em;
+    padding: 4.5em 2.1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    left: 25%;
+    top: 15%;
+}
+
+.bnt-planeta{
+    position: absolute;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.903);
+    border: 0;
+    padding: 5em 2.1em;
     box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
     text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
     cursor: pointer;
@@ -41,21 +57,4 @@
     cursor: pointer;
     top: 5px;
     left: 5px;
-
-}
-
-.btn-velha{
-    position: absolute;
-    font-size: 1.2em;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.903);
-    border: 0;
-    padding: 5em 2em;
-    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
-    text-shadow: 2px 2px 2px rgba(60, 34, 204, 0.5);
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: none;
-    left: 15%;
-    top: 15%;
 }
