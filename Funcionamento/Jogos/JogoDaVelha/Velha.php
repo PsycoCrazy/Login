@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="Velha.css">
     <title>Jogo da Velha</title>
 </head>
-<body>   
+<body>
+    <div>
+        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="velha.css" />
+    </div>   
     <main class="container">
         <h1>JOGO DA VELHA</h1>
             <hr />

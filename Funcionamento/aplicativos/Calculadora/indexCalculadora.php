@@ -8,10 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
-    <link rel="stylesheet" href="calcudadora.css">
+    <link rel="stylesheet" href="calculadora.css">
     </head>
 
     <body>
+    <div>
+        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="calculadora.css" />
+    </div>
         <div class="container">
             <div class="result">
                 <span>0</span>
