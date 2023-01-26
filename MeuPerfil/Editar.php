@@ -44,32 +44,33 @@ else
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="Editar.css">
     <title>Editar</title>
 </head>
 
 <body>
-    <div class="botao-voltar">
-        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
-    </div>
-    <div>
-        <form action=""SaveEdit.php method="POST"> 
-            <fieldset class="grupo">
-                    <label for="Nome"><strong>Nome:</strong></label>
-                    <input type="text" name="Nome" id="nome" value="<?php echo $Nome ?>" required>
-            </br>
-                <label for="Email"><strong>Email:</strong></label>
-                <input type="text" name="Email" id="Email" value="<?php echo $Email ?>" required>
-            </br>
-<!--                 <label for="Senha"><strong>Senha:</strong></label>
+    <div class="containers">
+        <div>
+            <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Editar.css" />
+        </div>
+        <div>
+            <form action=""SaveEdit.php method="POST"> 
+                <fieldset class="grupo">
+                        <label for="Nome"><strong>Nome:</strong></label>
+                        <input type="text" name="Nome" id="Nome" value="<?php echo $Nome ?>" required>
+                </br>
+                    <label for="Email"><strong>Email:</strong></label>
+                    <input type="text" name="Email" id="Email" value="<?php echo $Email ?>" required>
+                </br>
+    <!--                 <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" required>
             </br> -->
                 <label for="Data_Nasc"><strong>Data de Nascimento:</strong></label>
-                <input type="text" name="Data_Nasc" id="Data_Nasc" value="<?php echo $Data_Nasc ?>" required>
+                <input type="date" name="Data_Nasc" id="Data_Nasc" value="<?php echo $Data_Nasc ?>" required>
                 </br>
             <label for="sexo"><strong>Sexo:</strong></label>
                 <input type="text" name="Sexo" id="Sexo" value="<?php echo $Sexo ?>" required>
-<!--             <label>
+    <!--             <label>
                 <input type="radio" name="Sexo" value="Sexo" checked>Feminino
             </label>
             <label>
@@ -79,11 +80,10 @@ else
             <label for="Senha"><strong>Senha:</strong></label>
                 <input type="password" name="Senha" id="Senha" value="<?php echo $Senha ?>" required>
                 <input type="hidden" name="ID" value="<?php echo $ID ?>">
-                <button class="botao" type="submit" name="update" id="update">Enviar</button>
+                <button class="btn-enviar" type="submit" name="update" id="update">Enviar</button>
             </fieldset>
-
         </form>
+    </div>
+</body>
 
-    </body>
-
-    </html>
+</html>

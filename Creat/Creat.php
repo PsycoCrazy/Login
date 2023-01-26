@@ -33,7 +33,7 @@
 
 <body>
     <div class="containers">
-        <div class="botao-voltar">
+        <div>
             <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
         </div>
         <p class="titulo"><strong>CADASTRE-SE</strong></p>
