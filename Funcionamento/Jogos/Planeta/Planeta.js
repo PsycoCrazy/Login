@@ -24,10 +24,10 @@ document.addEventListener("keydown", function(event) {
 
 document.addEventListener("keydown", function(event) {
     if(event.key === "Enter"){//Espaço | Disparo
-      atira(pjx+17,pjy);
-/*     if(event.key === "Enter"){
+      atira(pjx+ 17 ,pjy);
+    if(event.key === "Enter"){
         console.log("Apertou Enter");
-    } */
+    }
     }
 });
 document.addEventListener("keyup", function(event) {
@@ -97,7 +97,7 @@ function controleTiros(){
     }
 }
 
-function colisaoTiroBomba(tiro){
+/* function colisaoTiroBomba(tiro){
     var tam=bombasTotal.length;
     for(var i=0;i<tam;i++){
         if(bombasTotal[i]){
@@ -118,7 +118,7 @@ function colisaoTiroBomba(tiro){
             }
         }
     }
-}
+} */
 
 /* function criaExplosao(tipo,x,y){//Tipo 1=AR, 2=TERRA
     if(document.getElementById("explosao"+(ie-4))){
@@ -190,7 +190,7 @@ function GameLoop(){
     frames=requestAnimationFrame(GameLoop);
 }
 
-function reinicia(){
+/* function reinicia(){
     bombasTotal==document.getElementsByClassName("bomba");
     var tam=bombasTotal.length;
     for(var i=0;i<tam;i++){
@@ -210,7 +210,7 @@ function reinicia(){
     Jogo=true;
     tmpCriaBomba=setInterval(criaBomba,1700);
     GameLoop();
-}
+} */
 
 function inicia(){
     Jogo=false;
@@ -244,4 +244,4 @@ function inicia(){
     document.getElementById("btnJogar").addEventListener("click", reinicia);
 }
 
-window.addEventListener("load", inicia);
+/* window.addEventListener("load", inicia); */
