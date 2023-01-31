@@ -12,12 +12,14 @@
 </head>
 <body>
     <div>
-        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Creat.css" />
+        <input class="btn-home" type='button' value='Home' onclick='history.go(-1)' href="Jogos.css" />
     </div>
     <div class="containers">
         <div>
         <a class="bnt-planeta" id="Detalhe" href="Planeta/Planeta.php">Save The Planet</a>
         <a class="velha" id="Detalhe" href="JogoDaVelha/Velha.php">Jogo da Velha</a>
+        <a class="forca" id="Detalhe" href="JogoDaForca/Forca.php">Jogo Da Forca</a>
+        <a class="Bird" id="Detalhe" href="Bird/Bird.php">Flappy Bird</a>
         </div>
     </div>
     <script type="text/javascript" src="Jogos.js"></script>

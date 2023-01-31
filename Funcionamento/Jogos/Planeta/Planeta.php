@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +22,7 @@
         </div>
         <div id="naveJog" class="naveJog"></div>
         <div id="telaMsg" class="telaMsg">
-            <button id="btnJogar" class="btnJogar">Play</button>
+<!--             <button id="btnJogar" class="btnJogar">Play</button> -->
         </div>
         <div id="telaMsg" class="telaMsg">
             <button id="btnJogar" class="btnJogar">Jogar</button>
