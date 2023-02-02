@@ -10,7 +10,7 @@ flappyImg.src = 'assets/flappy_dunk.png';
 //Game constants
 const FLAP_SPEED = -5;
 const BIRD_WIDTH = 40;
-const BIRD_HEIGHT = 30;
+const BIRD_HEIGHT = 25;
 const PIPE_WIDTH = 50;
 const PIPE_GAP = 125;
 
